@@ -36,7 +36,7 @@ export default function AuthScreen() {
         : await signInWithEmailAndPassword(auth, email, password);
       setUser(cred.user);
     } catch (err) {
-      // user-friendly map of common codes
+      
       const map = {
         'auth/invalid-email': 'Email address is badly formatted.',
         'auth/weak-password': 'Password should be at least 6 characters.',

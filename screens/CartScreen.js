@@ -5,7 +5,7 @@ import { ref, onValue } from 'firebase/database';
 import CartItem from '../components/CartItem';
 
 export default function CartScreen() {
-  const [items, setItems] = useState([]);   // [{ id, ...item }]
+  const [items, setItems] = useState([]);   
 
   useEffect(() => {
     const cartRef = ref(db, `carts/${auth.currentUser.uid}/items`);
